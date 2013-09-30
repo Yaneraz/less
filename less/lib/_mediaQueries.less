@@ -1,0 +1,24 @@
+//media queries
+// Screen (800-1024)                        | @mediaScreen {}
+// Tablet (480-800)                         | @mediaTablet {}
+// Phone (0-480)                            | @mediaPhone {}
+
+
+@screen1024: ~"screen and (max-width: 1024px)";
+@screen1366: ~"screen and (max-width: 1366px)";
+@screen1280: ~"screen and (max-width: 1280px)";
+@tablet: ~"screen and (max-width: 801px)";
+@phone: ~"screen and (max-width: 481px)";
+@phoneLandscape: ~"@{phone} and (orientation: landscape)";
+@tabletLandscape: ~"@{tablet} and (orientation: landscape)";
+
+@retina: ~"only screen and ( -webkit-min-device-pixel-ratio: 1.3), only screen and ( min--moz-device-pixel-ratio: 1.3), only screen and ( -o-min-device-pixel-ratio: 2.6/2), only screen and ( min-device-pixel-ratio: 1.3), only screen and ( min-resolution: 1.3dppx)";
+
+// small/old screens
+//  @media @screen {}
+
+// tablets
+//	@media @tablet {}
+
+//  mobile devices
+//	@media @phone {}

@@ -1,0 +1,15 @@
+/*---------------------------------------------------------------------------
+	[Icons]
+---------------------------------------------------------------------------*/
+@iconSpritePath: "../img/ico.png";
+
+.ico { display:inline-block; background:url(@iconSpritePath) no-repeat; /*-webkit-transform:translateZ(0);*/}
+
+.ico_type_someicon { height:16px; width:15px;}
+
+@media @retina {
+	.ico {
+		background-image: url("../img/ico-2x.png");
+		background-size:100px 300px;
+	}
+}
