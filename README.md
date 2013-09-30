@@ -1,4 +1,4 @@
 LESS
 ====
 
-LESS CSS boilerplate
+Creating awesome LESS CSS boilerplate
