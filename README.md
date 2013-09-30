@@ -1,4 +1,4 @@
-less
+LESS
 ====
 
 LESS CSS boilerplate
