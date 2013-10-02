@@ -9,7 +9,7 @@ Simply:
 
     git clone https://github.com/Yaneraz/less.git <project name>
 
-To remove unnecessary  .git folder type
+To remove unnecessary  .git folder type:
 
     rm -rf <project name>/.git
 
@@ -21,10 +21,42 @@ or
 
 Alternatively you can always download as `zip`.
 
-File structure
---------------
+Reference
+---------
 
-TODO: add file structure description
+TODO: Describe main variables, code style, principles of codding.
+
+Directory layout
+----------------
+
+    projectName/                --> all of the files to be used in production
+      css/              --> css files
+        app.css         --> default stylesheet
+
+      img/              --> image files
+
+      js/               --> javascript files
+        main.js         --> elements' cross page behavior
+        <plugins/libs>  --> other necessary libs and plugins
+
+      less/              --> angular and 3rd party javascript libraries
+        lib/
+          _grid.less         --> modular grid constructor (currently not used)
+          _mediaQueries.less --> media queries, includes retina detection
+          _mixins.less       --> LESS mixins (see file for function reference)
+        _base.less           --> contains libs includes
+        _buttons.less        --> buttons constructor
+        _common.less         --> reset, normalize, basic page styles, link behavior, user generated content styles
+        _forms.less          --> forms and forms' elements constructor
+        _icons.less          --> icon constructor (no automation yet)
+        _layout.less         --> only layout blocks styles, no appearance blocks
+        _variables.less      --> global variables: colors, url, rounds, font-family etc.
+
+        style.less           --> file that collects all includes/modules
+        main.less            --> blocks, styles, but no layout blocks
+        <other>.less         --> other styles for plugins, site sections or event different developers working files. Don't forget to import them in style.less
+
+      index.html             --> index file with only /css/style.css included
 
 Watchers/Compilers
 ------------------
@@ -45,8 +77,7 @@ Path to less executable file
 ##### Arguments
 File(s) or directory that will be passed to the transpiler. For now we should specify only style.less.
 
-Later files with "_" in the beginning will be imported to main (style.less),
-others will create css file with theirs filename.
+Later files with "_" in the beginning will be imported to main (style.less), others will create css file with theirs filename, like this was done in SASS/SCSS.
 
 ##### Working directory
 Specify the directory to which the transpiler will be applied. If not specified - working directory is the directory of the current file.
