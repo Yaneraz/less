@@ -29,7 +29,7 @@ TODO: Describe main variables, code style, principles of codding.
 Directory layout
 ----------------
 
-    projectName/                --> all of the files to be used in production
+    projectName/             --> all of the files to be used in production
       css/                   --> css files
         PIE.htc              --> css3pie library for IEs < 10
         style.css            --> compiled stylesheet
@@ -98,6 +98,6 @@ Feature: doesn't display less files that starts with "_" but watches them correc
 
 
 [0]: https://www.dropbox.com/s/nnd0852697faae3/webstorm-file-watcher.png
-[1]: https://photos-4.dropbox.com/t/0/AADgwYGO8a5bBcA6uDJ5InuZIqQDtlgJaMNktGAwODjEpA/12/40486094/png/1024x768/3/1380715200/0/2/webstorm-file-watcher.png/1BYUDbrikIqrnNKlhVesisGP3nEGBSJ_8xWil0H0-6k
+[1]: http://z-index.com.ua/Content/img/webstorm-file-watcher.png
 [2]: http://koala-app.com/
 [3]: http://winless.org/
