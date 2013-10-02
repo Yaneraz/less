@@ -19,6 +19,8 @@ or
 
 `!$` is for previous argument right after git clone has been completed.
 
+Alternatively you can always download as `zip`.
+
 File structure
 --------------
 
