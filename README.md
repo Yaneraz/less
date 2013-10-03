@@ -29,33 +29,33 @@ TODO: Describe main variables, code style, principles of codding.
 Directory layout
 ----------------
 
-    projectName/             --> all of the files to be used in production
-      css/                   --> css files
-        PIE.htc              --> css3pie library for IEs < 10
-        style.css            --> compiled stylesheet
-      img/                   --> image files
-      js/                    --> javascript files
-        main.js              --> elements' cross page behavior
-        <plugins/libs>       --> other necessary libs and plugins
-      less/                  --> angular and 3rd party javascript libraries
-        lib/
-          _grid.less         --> modular grid constructor (currently not used)
-          _mediaQueries.less --> media queries, includes retina detection
-          _mixins.less       --> LESS mixins (see file for function reference)
-        _base.less           --> contains libs includes
-        _buttons.less        --> buttons constructor
-        _common.less         --> reset, normalize, basic page styles, link behavior, user generated
+    ├── projectName/             --> all of the files to be used in production
+      ├── css/                   --> css files
+        ├── PIE.htc              --> css3pie library for IEs < 10
+        └── style.css            --> compiled stylesheet
+      ├── img/                   --> image files
+      ├── js/                    --> javascript files
+        ├── main.js              --> elements' cross page behavior
+        └── <plugins/libs>       --> other necessary libs and plugins
+      ├── less/                  --> angular and 3rd party javascript libraries
+        ├── lib/
+          ├── _grid.less         --> modular grid constructor (currently not used)
+          ├── _mediaQueries.less --> media queries, includes retina detection
+          └── _mixins.less       --> LESS mixins (see file for function reference)
+        ├── _base.less           --> contains libs includes
+        ├── _buttons.less        --> buttons constructor
+        ├── _common.less         --> reset, normalize, basic page styles, link behavior, user generated
                                  content styles
-        _forms.less          --> forms and forms' elements constructor
-        _icons.less          --> icon constructor (no automation yet)
-        _layout.less         --> only layout blocks styles, no appearance blocks
-        _variables.less      --> global variables: colors, url, rounds, font-family etc.
-        style.less           --> file that collects all includes/modules
-        main.less            --> blocks, styles, but no layout blocks
-        <other>.less         --> other styles for plugins, site sections or event different
+        ├── _forms.less          --> forms and forms' elements constructor
+        ├── _icons.less          --> icon constructor (no automation yet)
+        ├── _layout.less         --> only layout blocks styles, no appearance blocks
+        ├── _variables.less      --> global variables: colors, url, rounds, font-family etc.
+        ├── style.less           --> file that collects all includes/modules
+        ├── main.less            --> blocks, styles, but no layout blocks
+        └── <other>.less         --> other styles for plugins, site sections or event different
                                  developers working files.
                                  Don't forget to import them in style.less
-      index.html             --> index file with only /css/style.css included
+      └── index.html             --> index file with only /css/style.css included
 
 Watchers/Compilers
 ------------------
