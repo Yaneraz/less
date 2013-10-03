@@ -1,11 +1,13 @@
 /*---------------------------------------------------------------------------
 	[Icons]
 ---------------------------------------------------------------------------*/
-@iconSpritePath: "../img/ico.png";
+.ico {
+	display:inline-block;
+	background:url("../img/ico.png") no-repeat;
+	/*-webkit-transform:translateZ(0);*/
+}
 
-.ico { display:inline-block; background:url(@iconSpritePath) no-repeat; /*-webkit-transform:translateZ(0);*/}
-
-.ico_type_someicon { height:16px; width:15px;}
+@import "_sprites";
 
 @media @retina {
 	.ico {

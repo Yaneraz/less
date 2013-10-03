@@ -3,7 +3,7 @@ LESS boilerplate
 
 Creating awesome LESS CSS boilerplate.
 
-#### How to start?
+### How to start?
 
 Simply:
 
