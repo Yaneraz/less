@@ -37,7 +37,7 @@ Directory layout
       ├── js/                    --> javascript files
         ├── main.js              --> elements' cross page behavior
         └── <plugins/libs>       --> other necessary libs and plugins
-      ├── less/                  --> angular and 3rd party javascript libraries
+      ├── less/                  --> LESS source file, frameworks, libraries
         ├── lib/
           ├── _grid.less         --> modular grid constructor (currently not used)
           ├── _mediaQueries.less --> media queries, includes retina detection
