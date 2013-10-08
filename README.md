@@ -24,9 +24,7 @@ Alternatively you can always download as `zip`.
 Reference
 ---------
 
-**Warning!** There is `* { box-sizing:bordr-box;}` rule. So be careful with paddings.
-
-- Grid system http://getbootstrap.com/examples/grid/
+- Grid system http://getbootstrap.com/2.3.2/scaffolding.html#gridSystem
 
 TODO: Describe main variables, code style, principles of codding.
 
