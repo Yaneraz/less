@@ -1,4 +1,6 @@
-var  mainJs = new MainJsClass();
+$(function(){
+    var  mainJs = new MainJsClass();
+});
 
 var MainJsClass = function () {
     var scope = this;

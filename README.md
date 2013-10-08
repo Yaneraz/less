@@ -24,6 +24,10 @@ Alternatively you can always download as `zip`.
 Reference
 ---------
 
+**Warning!** There is `* { box-sizing:bordr-box;}` rule. So be careful with paddings.
+
+- Grid system http://getbootstrap.com/examples/grid/
+
 TODO: Describe main variables, code style, principles of codding.
 
 Directory layout
@@ -39,7 +43,7 @@ Directory layout
         └── <plugins/libs>       --> other necessary libs and plugins
       ├── less/                  --> LESS source file, frameworks, libraries
         ├── lib/
-          ├── _grid.less         --> modular grid constructor (currently not used)
+          ├── _grid.less         --> modular grid constructor (Bootstrap 3.0.0)
           ├── _mediaQueries.less --> media queries, includes retina detection
           └── _mixins.less       --> LESS mixins (see file for function reference)
         ├── _base.less           --> contains libs includes
