@@ -5,7 +5,7 @@ $(function(){
 
 function HtmlDebugger(){
     var self = this,
-        htmlBody = '<div id="html-debugger-wrapper" style="position:fixed; top:100px; right:20px; z-index:1001; background:#fff; border:1px solid #ff0000;"></div>',
+        htmlBody = '<div id="html-debugger-wrapper" class="html-state-switcher" style="position:fixed; top:100px; right:20px; z-index:1001; background:#fff; border:1px solid #ff0000;"></div>',
         itemsCollection = $('*[data-htmlstate]'),
         states = [],
         item = {};
@@ -27,7 +27,7 @@ function HtmlDebugger(){
 
         //adding states controls
         for (var i = 0; i < states.length; i++){
-            var template = '<div class="html-debugger-item" style="padding:10px;"><label><input data-htmlstate="'+ states[i] +'" name="html-debug" type="radio" style="margin-right:10px;">'+ states[i] +'</label></div>';
+            var template = '<div class="html-state-switcher__item" style="padding:10px;"><label><input data-htmlstate="'+ states[i] +'" name="html-debug" type="radio" style="margin-right:10px;">'+ states[i] +'</label></div>';
             wrapper.append(template);
         }
 
@@ -40,8 +40,8 @@ function HtmlDebugger(){
                 var input = $(this);
 
                 //on check
-                inputs.attr('checked',false);
-                input.attr('checked',true);
+                inputs.prop('checked',false);
+                input.prop('checked',true);
 
                 itemsCollection.hide();
                 itemsCollection.filter(function(index){
@@ -51,6 +51,10 @@ function HtmlDebugger(){
                 }).show();
             }
         });
+
+        if (inputs.length === 0){
+            wrapper.remove();
+        }
     };
 
     this.init();
