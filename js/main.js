@@ -1,8 +1,6 @@
-$(function(){
-    var  mainJs = new MainJsClass();
-});
+var mainJs = new MainJsClass();
 
-var MainJsClass = function () {
+function MainJsClass() {
     var scope = this;
 
     this.commonFeatures = function () {
@@ -12,4 +10,4 @@ var MainJsClass = function () {
     $(function(){
        scope.commonFeatures();
     });
-};
+}
