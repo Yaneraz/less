@@ -1,22 +1,23 @@
 .clearfix,
+.clr,
 .line {
   *zoom: 1;
 }
 .clearfix:before,
+.clr:before,
 .line:before,
 .clearfix:after,
+.clr:after,
 .line:after {
   display: table;
   content: "";
   line-height: 0;
 }
 .clearfix:after,
+.clr:after,
 .line:after {
   clear: both;
 }
-/*---------------------------------------------------------------------------
-	[Basic page styles]
----------------------------------------------------------------------------*/
 body,
 div,
 dl,
@@ -81,6 +82,9 @@ a img,
 fieldset {
   border: none;
 }
+@font-face {
+  
+}
 html,
 body {
   height: 100%;
@@ -88,7 +92,7 @@ body {
 body {
   font-family: 'PT Sans', sans-serif;
   font-size: 12px;
-  color: #000;
+  color: #333333;
 }
 a {
   text-decoration: none;
@@ -102,42 +106,21 @@ a {
 a:hover {
   color: #c50000;
 }
-/* ===== [ link-preset ] ===== */
-.b-link {
+.link {
   display: inline-block;
   vertical-align: top;
   text-decoration: none;
 }
-.b-link__inner {
+.link__inner {
   line-height: 1.2;
   text-decoration: none;
   border-bottom: 1px solid;
 }
-.b-link_pseudo .b-link__inner {
-  border-bottom: 1px dotted;
+.link_pseudo .link__inner {
+  border-bottom-style: dotted;
 }
-.wyswyg p {
-  margin-bottom: 1em;
-}
-.wyswyg ul,
-.wyswyg ol {
-  margin: 1em 2em;
-  list-style: disc;
-}
-.wyswyg ol {
-  list-style: decimal;
-}
-.wyswyg blockquote {
-  margin: 1em 2em;
-}
-.wyswyg table {
-  border-spacing: 0;
-  border-collapse: collapse;
-  width: 100%;
-}
-.wyswyg table td {
-  border: 1px solid #ccc;
-  padding: 5px;
+.g-red {
+  color: #9d261d !important;
 }
 .input-block-level {
   display: block;

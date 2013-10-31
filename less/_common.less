@@ -1,6 +1,6 @@
-/*---------------------------------------------------------------------------
-	[Basic page styles]
----------------------------------------------------------------------------*/
+// -------------------------
+// reset
+
 body,div,dl,dt,dd,ul,ol,li,form,table,tr,td,
 h1,h2,h3,h4,h5,h6,pre,p,span,b,i,
 input,textarea, fieldset {margin:0; padding:0;}
@@ -8,7 +8,7 @@ input,textarea, fieldset {margin:0; padding:0;}
 h1,h2,h3,h4,h5,h6 {
 	font-family:@headingsFontFamily;
 	font-weight:@headingsFontWeight;
-	color:@textColor;
+	color:@black;
 }
 
 ul {list-style-type:none;}
@@ -21,15 +21,21 @@ input[type="submit"] { cursor:pointer;}
 a img,fieldset{
 	border:none;
 }
-
 // END reset
 // -------------------------
 
+// font preset
+// -------------------------
+@font-face { }
+
+
+// Basic page styles
+// -------------------------
 html,body { height:100%;}
 body {
 	font-family:@baseFontFamily;
 	font-size:@baseFontSize;
-	color:#000;
+	color:@black;
 }
 
 a {
@@ -39,9 +45,11 @@ a {
 }
 a:hover { color:@linkColorHover;}
 
-/* ===== [ link-preset ] ===== */
 
-.b-link {
+// Link-preset
+// -------------------------
+
+.link {
 	display:inline-block;
 	vertical-align:top;
 	text-decoration:none;
@@ -52,15 +60,21 @@ a:hover { color:@linkColorHover;}
 		border-bottom:1px solid;
 	}
 }
-a.b-link:hover { }
+a.link:hover { }
 
-.b-link_pseudo {
+.link_pseudo {
 
-	.b-link__inner { border-bottom:1px dotted;}
+	.link__inner { border-bottom-style:dotted;}
 }
 
+// Global blocks
+// -------------------------
+
+.g-red { color:@red !important;}
+
+
 // common styles, these could be attached to any block with ".wyswyg;"
-.wyswyg{
+.wyswyg(@args){
 	 p{
 		 margin-bottom: 1em;
 	 }

@@ -32,8 +32,8 @@ function HtmlDebugger(){
         }
 
         //adding handlers
-        var inputs = $('.html-debugger-item input'),
-            labels = $('.html-debugger-item label');
+        var inputs = $('.html-state-switcher input'),
+            labels = $('.html-state-switcher label');
 
         inputs.on({
             change: function(){
