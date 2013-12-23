@@ -1,6 +1,22 @@
 /*---------------------------------------------------------------------------
 	[Icons]
 ---------------------------------------------------------------------------*/
+// main sprite mixin
+.sprite(@sprite) {
+	@height:  ~`"@{sprite}".split(', ')[5]`;
+	@width:  ~`"@{sprite}".split(', ')[4]`;
+	@background-image:  ~`"@{sprite}".split(', ')[8].slice(this.length, -1)`;
+	@offset-x:  ~`"@{sprite}".split(', ')[2]`;
+	@offset-y:  ~`"@{sprite}".split(', ')[3]`;
+	height: @height;
+	width: @width;
+	background: url(@background-image) @offset-x @offset-y no-repeat;
+}
+// short version
+.s(@sprite){
+	.sprite(@sprite);
+}
+
 .ico {
 	display:inline-block;
 	vertical-align:top;
