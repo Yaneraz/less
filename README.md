@@ -40,7 +40,7 @@ Directory layout
         ├── main.js              --> elements' cross page behavior
         └── <plugins/libs>       --> other necessary libs and plugins
       ├── less/                  --> LESS source file, frameworks, libraries
-        ├── lib/
+        ├── lib/                 --> core files
           ├── _grid.less         --> modular grid constructor (Bootstrap 3.0.0)
           ├── _mediaQueries.less --> media queries, includes retina detection
           └── _mixins.less       --> LESS mixins (see file for function reference)
@@ -54,7 +54,7 @@ Directory layout
         ├── _variables.less      --> global variables: colors, url, rounds, font-family etc.
         ├── style.less           --> file that collects all includes/modules
         ├── main.less            --> blocks, styles, but no layout blocks
-        └── <other>.less         --> other styles for plugins, site sections or event different
+        └── <other>.less         --> other styles for plugins, site sections or even different
                                  developers working files.
                                  Don't forget to import them in style.less
       └── index.html             --> index file with only /css/style.css included
